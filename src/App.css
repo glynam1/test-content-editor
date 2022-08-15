@@ -12,6 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.container {
+  width: 300px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -26,6 +29,21 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.toolbarHeader {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 25px 25px 0px;
+  box-shadow: 0 8px 4px -4px rgb(0 0 0 / 10%);
+}
+
+.toolbarHeader :global .ck.ck-toolbar {
+  background: none;
+  border: none;
 }
 
 @keyframes App-logo-spin {
